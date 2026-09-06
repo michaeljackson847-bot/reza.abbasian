@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رضا عباسیان | Reza Abbasian</title>
+    
+    <!-- جلوگیری از نمایش کدهای خام قبل از بارگذاری -->
+    <style>
+        html { visibility: hidden; opacity: 0; transition: opacity 0.3s ease-in; }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.70);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 20%, rgba(16, 185, 129, 0.18) 0%, rgba(139, 92, 246, 0.14) 35%, rgba(5, 8, 22, 1) 100%);
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.documentElement.style.visibility = "visible";
+            document.documentElement.style.opacity = "1";
+        });
+    </script>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Vazirmatn', 'sans-serif'] },
+                    colors: {
+                        emerald: { 400: '#34d399', 500: '#10b981' },
+                        violet: { 500: '#8b5cf6', 600: '#7c3aed' },
+                        slateDark: '#050816'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#050816] text-slate-100 font-sans antialiased selection:bg-emerald-400 selection:text-slate-950 overflow-x-hidden">
+
+    <!-- پس‌زمینه گرافیکی -->
+    <div class="fixed top-0 left-0 w-full h-full pointer-events-none -z-10 hero-gradient"></div>
+
+    <!-- ناوبری بالای صفحه -->
+    <nav class="fixed top-0 w-full z-50 bg-[#050816]/85 backdrop-blur-xl border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+            
+            <!-- لوگو و نام برند -->
+            <div class="flex items-center gap-3">
+                <img src="logo.png" alt="Reza Abbasian Logo" class="h-12 w-auto object-contain bg-white/10 p-1 rounded-xl border border-white/10" />
+                <div>
+                    <span class="text-lg font-extrabold bg-gradient-to-r from-white via-slate-200 to-emerald-400 bg-clip-text text-transparent block tracking-wide">
+                        <span class="lang-fa">رضا عباسیان</span>
+                        <span class="lang-en hidden">REZA ABBASIAN</span>
+                    </span>
+                    <span class="text-[10px] text-slate-400 block -mt-1 font-mono">
+                        <span class="lang-fa">طراحی سایت و توسعه</span>
+                        <span class="lang-en hidden">WEBSITE DESIGN & DEVELOPMENT</span>
+                    </span>
+                </div>
+            </div>
+
+            <!-- منو -->
+            <div class="space-x-8 space-x-reverse hidden md:flex text-sm font-medium text-slate-300">
+                <a href="#smart-system" class="hover:text-emerald-400 transition-colors">
+                    <span class="lang-fa">سامانه هوشمند ارجاع</span>
+                    <span class="lang-en hidden">Smart Referral System</span>
+                </a>
+                <a href="#portfolio" class="hover:text-emerald-400 transition-colors">
+                    <span class="lang-fa">نمونه‌کارها</span>
+                    <span class="lang-en hidden">Portfolio</span>
+                </a>
+                <a href="#seo" class="hover:text-emerald-400 transition-colors">
+                    <span class="lang-fa">استراتژی سئو</span>
+                    <span class="lang-en hidden">SEO Services</span>
+                </a>
+            </div>
+
+            <!-- دکمه‌های تغییر زبان و تماس -->
+            <div class="flex items-center gap-3">
+                <button onclick="toggleLanguage()" class="glass-card px-3 py-1.5 rounded-xl border border-emerald-500/30 text-emerald-400 text-xs font-bold hover:bg-emerald-500/10 transition-all flex items-center gap-1">
+                    <span id="lang-btn-text">EN</span>
+                </button>
+
+                <a href="tel:09120446346" class="bg-gradient-to-r from-emerald-400 via-teal-500 to-violet-600 text-slate-950 font-black px-4 py-2 rounded-xl text-sm transition-all shadow-lg shadow-emerald-500/20 hover:scale-105 active:scale-95 font-mono">
+                    09120446346
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- بخش اصلی بالای صفحه -->
+    <section class="pt-40 pb-20 px-6 text-center relative">
+        <div class="max-w-4xl mx-auto space-y-8">
+            
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-emerald-500/30 text-emerald-400 text-xs font-bold shadow-xl">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span class="lang-fa">نوآوری در حوزه دیجیتال سلامت</span>
+                <span class="lang-en hidden">Digital Health Innovation</span>
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-black leading-tight tracking-tight">
+                <span class="lang-fa">طراحی سایت‌های تخصصی و <br><span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-violet-400 bg-clip-text text-transparent">سیستم هوشمند ارجاع بیمار</span></span>
+                <span class="lang-en hidden">Specialized Medical Web Design & <br><span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-violet-400 bg-clip-text text-transparent">Smart Patient Referral System</span></span>
+            </h1>
+
+            <p class="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">
+                <span class="lang-fa">طراح و توسعه‌دهنده سیستم‌های مدرن پزشکی، اتوماسیون ارجاع بیمار به آزمایشگاه و متخصص سئو حوزه درمان.</span>
+                <span class="lang-en hidden">Designer and developer of modern medical systems, laboratory referral automation, and healthcare SEO specialist.</span>
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+                <a href="#smart-system" class="bg-gradient-to-r from-emerald-400 to-teal-500 text-slate-950 font-black px-8 py-4 rounded-2xl hover:shadow-xl hover:shadow-emerald-500/25 transition-all hover:-translate-y-1 text-center">
+                    <span class="lang-fa">مشاهده سیستم هوشمند</span>
+                    <span class="lang-en hidden">View Smart System</span>
+                </a>
+                <a href="#portfolio" class="glass-card hover:bg-slate-800/80 text-white font-semibold px-8 py-4 rounded-2xl transition-all border border-slate-700/80 text-center">
+                    <span class="lang-fa">نمونه‌کارها</span>
+                    <span class="lang-en hidden">Portfolio</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- سامانه ارجاع هوشمند -->
+    <section id="smart-system" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center space-y-4 mb-20">
+                <span class="text-violet-400 font-extrabold text-xs tracking-widest uppercase bg-violet-500/10 px-4 py-1.5 rounded-full border border-violet-500/20">
+                    <span class="lang-fa">برای اولین بار</span>
+                    <span class="lang-en hidden">FIRST TIME EVER</span>
+                </span>
+                <h2 class="text-3xl md:text-5xl font-black">
+                    <span class="lang-fa">سیستم هوشمند ارجاع بیمار به آزمایشگاه</span>
+                    <span class="lang-en hidden">Smart Patient Referral to Laboratories</span>
+                </h2>
+                <p class="text-slate-400 max-w-2xl mx-auto text-base">
+                    <span class="lang-fa">راهکار جامع آنلاین برای اتصال پزشک، بیمار و آزمایشگاه</span>
+                    <span class="lang-en hidden">Comprehensive online solution connecting doctors, patients, and labs</span>
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-3xl hover:border-emerald-500/50 transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 mb-8 font-bold text-xl">01</div>
+                    <h3 class="text-xl font-bold mb-3">
+                        <span class="lang-fa">ثبت نسخه الکترونیک</span>
+                        <span class="lang-en hidden">E-Prescription Registration</span>
+                    </h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        <span class="lang-fa">ثبت درخواست‌های آزمایشگاهی توسط پزشک یا ارسال نسخه بیمار به‌صورت دیجیتال در پلتفرم.</span>
+                        <span class="lang-en hidden">Digital lab request entry by doctors or direct prescription uploads by patients.</span>
+                    </p>
+                </div>
+
+                <div class="glass-card p-8 rounded-3xl hover:border-violet-500/50 transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-14 h-14 rounded-2xl bg-violet-500/10 border border-violet-500/30 flex items-center justify-center text-violet-400 mb-8 font-bold text-xl">02</div>
+                    <h3 class="text-xl font-bold mb-3">
+                        <span class="lang-fa">مسیریابی و ارجاع هوشمند</span>
+                        <span class="lang-en hidden">Smart Routing & Referral</span>
+                    </h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        <span class="lang-fa">انتخاب بهترین و نزدیک‌ترین آزمایشگاه طرف قرارداد بر اساس موقعیت مکانی و خدمات مورد نیاز.</span>
+                        <span class="lang-en hidden">Automated selection of partner labs based on geolocation and specializations.</span>
+                    </p>
+                </div>
+
+                <div class="glass-card p-8 rounded-3xl hover:border-pink-500/50 transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-14 h-14 rounded-2xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400 mb-8 font-bold text-xl">03</div>
+                    <h3 class="text-xl font-bold mb-3">
+                        <span class="lang-fa">پاسخ‌دهی و پیگیری آنلاین</span>
+                        <span class="lang-en hidden">Online Results & Tracking</span>
+                    </h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        <span class="lang-fa">دریافت نتایج به‌صورت پی‌دی‌اف، اطلاع‌رسانی پیامکی و مدیریت سوابق پزشکی بیمار.</span>
+                        <span class="lang-en hidden">Instant PDF results delivery, SMS notifications, and central record archiving.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- نمونه‌کارها -->
+    <section id="portfolio" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto space-y-16">
+            <div class="text-center space-y-4">
+                <h2 class="text-3xl md:text-5xl font-black">
+                    <span class="lang-fa">نمونه‌کارهای برجسته</span>
+                    <span class="lang-en hidden">Featured Portfolio</span>
+                </h2>
+                <p class="text-slate-400 max-w-xl mx-auto">
+                    <span class="lang-fa">پروژه‌های موفق اجرا شده در حوزه درمانی، آموزشی و خدماتی</span>
+                    <span class="lang-en hidden">Successful projects delivered across healthcare, education, and services</span>
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <a href="https://shafamhc.com" target="_blank" class="glass-card p-6 rounded-3xl hover:border-emerald-400/60 transition-all duration-300 hover:-translate-y-2 block group">
+                    <span class="text-xs font-bold bg-emerald-500/10 text-emerald-400 px-3 py-1 rounded-xl border border-emerald-500/20">
+                        <span class="lang-fa">درمانی</span><span class="lang-en hidden">Clinic</span>
+                    </span>
+                    <h3 class="text-lg font-bold mt-4 mb-1 group-hover:text-emerald-400 transition-colors">
+                        <span class="lang-fa">درمانگاه شبانه‌روزی شفا</span><span class="lang-en hidden">Shafa Medical Complex</span>
+                    </h3>
+                    <p class="text-slate-500 text-xs font-mono">shafamhc.com</p>
+                </a>
+
+                <a href="https://dr-abdali.com" target="_blank" class="glass-card p-6 rounded-3xl hover:border-violet-400/60 transition-all duration-300 hover:-translate-y-2 block group">
+                    <span class="text-xs font-bold bg-violet-500/10 text-violet-400 px-3 py-1 rounded-xl border border-violet-500/20">
+                        <span class="lang-fa">پزشکی</span><span class="lang-en hidden">Medical</span>
+                    </span>
+                    <h3 class="text-lg font-bold mt-4 mb-1 group-hover:text-violet-400 transition-colors">
+                        <span class="lang-fa">دکتر ابدالی</span><span class="lang-en hidden">Dr. Abdali</span>
+                    </h3>
+                    <p class="text-slate-500 text-xs font-mono">dr-abdali.com</p>
+                </a>
+
+                <a href="https://ahmadie.ir" target="_blank" class="glass-card p-6 rounded-3xl hover:border-pink-400/60 transition-all duration-300 hover:-translate-y-2 block group">
+                    <span class="text-xs font-bold bg-pink-500/10 text-pink-400 px-3 py-1 rounded-xl border border-pink-500/20">
+                        <span class="lang-fa">آموزشی</span><span class="lang-en hidden">Education</span>
+                    </span>
+                    <h3 class="text-lg font-bold mt-4 mb-1 group-hover:text-pink-400 transition-colors">
+                        <span class="lang-fa">مجتمع آموزشی احمدیه</span><span class="lang-en hidden">Ahmadie Educational Complex</span>
+                    </h3>
+                    <p class="text-slate-500 text-xs font-mono">ahmadie.ir</p>
+                </a>
+
+                <a href="https://kimialab.org" target="_blank" class="glass-card p-6 rounded-3xl hover:border-emerald-400/60 transition-all duration-300 hover:-translate-y-2 block group">
+                    <span class="text-xs font-bold bg-emerald-500/10 text-emerald-400 px-3 py-1 rounded-xl border border-emerald-500/20">
+                        <span class="lang-fa">آزمایشگاه</span><span class="lang-en hidden">Laboratory</span>
+                    </span>
+                    <h3 class="text-lg font-bold mt-4 mb-1 group-hover:text-emerald-400 transition-colors">
+                        <span class="lang-fa">آزمایشگاه کیمیا</span><span class="lang-en hidden">Kimia Laboratory</span>
+                    </h3>
+                    <p class="text-slate-500 text-xs font-mono">kimialab.org</p>
+                </a>
+
+                <a href="https://shafafoptic.com" target="_blank" class="glass-card p-6 rounded-3xl hover:border-pink-400/60 transition-all duration-300 hover:-translate-y-2 block group">
+                    <span class="text-xs font-bold bg-pink-500/10 text-pink-400 px-3 py-1 rounded-xl border border-pink-500/20">
+                        <span class="lang-fa">اپتیک</span><span class="lang-en hidden">Optics</span>
+                    </span>
+                    <h3 class="text-lg font-bold mt-4 mb-1 group-hover:text-pink-400 transition-colors">
+                        <span class="lang-fa">عینک شفاف</span><span class="lang-en hidden">Shafaf Optics</span>
+                    </h3>
+                    <p class="text-slate-500 text-xs font-mono">shafafoptic.com</p>
+                </a>
+
+                <a href="https://drshahriar.com" target="_blank" class="glass-card p-6 rounded-3xl hover:border-emerald-400/60 transition-all duration-300 hover:-translate-y-2 block group">
+                    <span class="text-xs font-bold bg-emerald-500/10 text-emerald-400 px-3 py-1 rounded-xl border border-emerald-500/20">
+                        <span class="lang-fa">پزشکی</span><span class="lang-en hidden">Medical</span>
+                    </span>
+                    <h3 class="text-lg font-bold mt-4 mb-1 group-hover:text-emerald-400 transition-colors">
+                        <span class="lang-fa">دکتر شهریار</span><span class="lang-en hidden">Dr. Shahriar</span>
+                    </h3>
+                    <p class="text-slate-500 text-xs font-mono">drshahriar.com</p>
+                </a>
+
+                <a href="https://drsaghayati.com" target="_blank" class="glass-card p-6 rounded-3xl hover:border-violet-400/60 transition-all duration-300 hover:-translate-y-2 block group">
+                    <span class="text-xs font-bold bg-violet-500/10 text-violet-400 px-3 py-1 rounded-xl border border-violet-500/20">
+                        <span class="lang-fa">پزشکی</span><span class="lang-en hidden">Medical</span>
+                    </span>
+                    <h3 class="text-lg font-bold mt-4 mb-1 group-hover:text-violet-400 transition-colors">
+                        <span class="lang-fa">دکتر سقایتی</span><span class="lang-en hidden">Dr. Saghayati</span>
+                    </h3>
+                    <p class="text-slate-500 text-xs font-mono">drsaghayati.com</p>
+                </a>
+
+                <!-- اصلاح املای نام دکتر پیمان علیپور کوهی -->
+                <a href="https://dr-alipoorkoohi.com" target="_blank" class="glass-card p-6 rounded-3xl hover:border-violet-400/60 transition-all duration-300 hover:-translate-y-2 block group">
+                    <span class="text-xs font-bold bg-violet-500/10 text-violet-400 px-3 py-1 rounded-xl border border-violet-500/20">
+                        <span class="lang-fa">پزشکی</span><span class="lang-en hidden">Medical</span>
+                    </span>
+                    <h3 class="text-lg font-bold mt-4 mb-1 group-hover:text-violet-400 transition-colors">
+                        <span class="lang-fa">دکتر پیمان علیپور کوهی</span><span class="lang-en hidden">Dr. Peyman Alipoor Koohi</span>
+                    </h3>
+                    <p class="text-slate-500 text-xs font-mono">dr-alipoorkoohi.com</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش خدمات سئو -->
+    <section id="seo" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto glass-card p-10 md:p-16 rounded-[40px] border border-slate-800">
+            <div class="text-center space-y-4 mb-16">
+                <h2 class="text-3xl md:text-4xl font-black">
+                    <span class="lang-fa">خدمات سئو تخصصی پزشکی و درمانی</span>
+                    <span class="lang-en hidden">Specialized Medical SEO Services</span>
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 rounded-2xl bg-slate-900/50 border border-slate-800 text-center">
+                    <h3 class="text-lg font-bold mb-2 text-emerald-400">Local SEO</h3>
+                    <p class="text-slate-400 text-sm">
+                        <span class="lang-fa">حضور پُررنگ در گوگل مپ و جستجوهای منطقه‌ای بیماران.</span>
+                        <span class="lang-en hidden">Dominating Google Maps and localized patient searches.</span>
+                    </p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900/50 border border-slate-800 text-center">
+                    <h3 class="text-lg font-bold mb-2 text-violet-400">Content SEO</h3>
+                    <p class="text-slate-400 text-sm">
+                        <span class="lang-fa">تولید محتوای تخصصی و رتبه‌گیری در کلمات کلیدی پرجستجوی پزشکی.</span>
+                        <span class="lang-en hidden">Healthcare content creation optimized for high-volume keywords.</span>
+                    </p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900/50 border border-slate-800 text-center">
+                    <h3 class="text-lg font-bold mb-2 text-pink-400">Technical SEO</h3>
+                    <p class="text-slate-400 text-sm">
+                        <span class="lang-fa">افزایش فوق‌العاده سرعت بارگذاری، امنیت داده‌ها و تجربه کاربری.</span>
+                        <span class="lang-en hidden">Boosting page load speeds, data security, and core web vitals.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش تماس با ما -->
+    <footer id="contact" class="py-20 px-6 border-t border-slate-800/80 text-center">
+        <div class="max-w-xl mx-auto space-y-6">
+            <img src="logo.png" alt="Reza Abbasian Logo" class="h-16 w-auto mx-auto object-contain bg-white/10 p-2 rounded-2xl border border-white/10" />
+            
+            <h2 class="text-2xl font-bold">
+                <span class="lang-fa">جهت مشاوره و شروع پروژه</span>
+                <span class="lang-en hidden">Get in Touch for Project Consultation</span>
+            </h2>
+            <p class="text-slate-400">
+                <span class="lang-fa">با من در ارتباط باشید</span>
+                <span class="lang-en hidden">Feel free to contact me</span>
+            </p>
+            
+            <div class="p-8 rounded-3xl glass-card border border-emerald-500/30 space-y-4">
+                <div class="text-2xl font-black text-emerald-400">
+                    <span class="lang-fa">رضا عباسیان</span>
+                    <span class="lang-en hidden">REZA ABBASIAN</span>
+                </div>
+                
+                <a href="tel:09120446346" class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-emerald-400 via-teal-500 to-violet-600 text-slate-950 font-black text-xl px-8 py-4 rounded-2xl hover:scale-105 active:scale-95 transition-all shadow-xl shadow-emerald-500/20 w-full font-mono">
+                    09120446346
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- اسکریپت تغییر زبان چابک -->
+    <script>
+        let currentLang = 'fa';
+        function toggleLanguage() {
+            const html = document.documentElement;
+            const faElements = document.querySelectorAll('.lang-fa');
+            const enElements = document.querySelectorAll('.lang-en');
+            const btnText = document.getElementById('lang-btn-text');
+
+            if (currentLang === 'fa') {
+                currentLang = 'en';
+                html.setAttribute('dir', 'ltr');
+                html.setAttribute('lang', 'en');
+                faElements.forEach(el => el.classList.add('hidden'));
+                enElements.forEach(el => el.classList.remove('hidden'));
+                btnText.textContent = 'FA';
+            } else {
+                currentLang = 'fa';
+                html.setAttribute('dir', 'rtl');
+                html.setAttribute('lang', 'fa');
+                enElements.forEach(el => el.classList.add('hidden'));
+                faElements.forEach(el => el.classList.remove('hidden'));
+                btnText.textContent = 'EN';
+            }
+        }
+    </script>
+</body>
+</html>
